@@ -6,10 +6,6 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Set;
-
 public class MoviesDTO {
 
     private JSONObject fullMoviesFile;
@@ -25,7 +21,6 @@ public class MoviesDTO {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-
     }
 
     public void printMovie() {
@@ -46,10 +41,6 @@ public class MoviesDTO {
 
     public JSONArray getRatings(){
        return (JSONArray) fullMoviesFile.get("Ratings");
-    }
-
-    public String getSource(){
-       return "ee";
     }
 
 }

@@ -8,12 +8,8 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
-
 public class MovieApiTests {
 
-    private static ValidatableResponse jsonBody;
     private static MoviesDTO movies;
 
     @BeforeClass
@@ -22,7 +18,6 @@ public class MovieApiTests {
         movies = new MoviesDTO();
         movies.printMovie();
         //jsonBody = get(" ").then();
-
         //i want to create a JSONArray that contains multiple movie Jsons. may have to do multiple calls.
     }
 

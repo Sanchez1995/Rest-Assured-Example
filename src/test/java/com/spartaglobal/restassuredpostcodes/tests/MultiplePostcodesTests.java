@@ -22,7 +22,6 @@ public class MultiplePostcodesTests {
         baseURI = "https://api.postcodes.io";
         basePath = "/postcodes/";
 
-
         JSONObject postcodes = new JSONObject();
         JSONArray multiplesPostcodes = new JSONArray();
 
@@ -46,7 +45,6 @@ public class MultiplePostcodesTests {
     @Test
     public void multiplePostcodeTest(){
         System.out.println((int) jsonBody.get("status"));
-        Assert.assertEquals("SW16 4HD", jsonBody.get("result[1].postcodes"));
-
+        Assert.assertEquals("SW16 4HD", jsonBody.get("result"));
     }
 }
