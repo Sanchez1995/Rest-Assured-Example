@@ -1,4 +1,4 @@
-package com.spartaglobal.restassuredpostcodes;
+package com.spartaglobal.restassuredpostcodes.tests;
 
 
 import io.restassured.response.ValidatableResponse;
